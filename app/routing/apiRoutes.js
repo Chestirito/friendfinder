@@ -13,36 +13,18 @@ module.exports = function(app) {
     var newFriend = req.body;
     var leastDif = 99;
     var indexOfLeast;
-    //var diff = 0;
     for(var i = 0; i < friendsData.length; i++){
-      // var dbScore = 0;
-      // var currScore = 0;
+     
       var diff = 0;
       for(var t = 0; t < newFriend.scores.length; t++){
-        //currScore += parseInt(newFriend.scores[t]);
-        //console.log(newFriend.scores[t]);
-        //dbScore += parseInt(friendsData[i].scores[t]);
         diff += Math.abs(parseInt(friendsData[i].scores[t]) - parseInt(newFriend.scores[t]));
       }
-      //console.log("currentscore: " + currScore);
-      //console.log("dbscore: " + dbScore);
-      //diff = Math.abs(dbScore - currScore);
-      //console.log("diff: "+diff);
-      //console.log("least diff: " + leastDif);
       if(leastDif > diff){
         leastDif = diff;
         indexOfLeast = i;
-        //console.log("leastdif:" + leastDif);
       }
     }
-    //friendsData.push(req.body);
-    //console.log(friendsData[indexOfLeast]);
     res.json(friendsData[indexOfLeast]);
     
-  });/*
-  app.post("/api/clear", function(req, res) {
-    friendsData.length = [];
-
-    res.json({ ok: true });
-  });*/
+  });
 };
