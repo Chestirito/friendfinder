@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Chestirito/friendfinder/issues"
   },
-  "homepage": "https://github.com/Chestirito/friendfinder#readme"
+  "homepage": "https://github.com/Chestirito/friendfinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
 }

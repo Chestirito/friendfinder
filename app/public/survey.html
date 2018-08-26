@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>
+        
+    </title>
+    <!-- local style  -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- responsive inspection  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- boostrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- jquery  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- local js  -->
+    <!-- <script type="text/javascript" src="./app.js"></script> -->
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>FFS Quiz</h1>
+        <hr>
+        <h3 class="font-weight-bold">Identify Yourself First</h3>
+        <h4>Name or nickname (REQUIRED)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Picture Link (REQUIRED)</h4>
+        <input type="text" id="pic" class="form-control" required>
+        <hr>
+        <h3 class="font-weight-bold">Question 1</h3>
+        <h4>You like sports</h4>
+        <select class="custom-select" id="q1">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 2</h3>
+        <h4>You love to hang indoors</h4>
+        <select class="custom-select" id="q2">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 3</h3>
+        <h4>You prefer to watch movie where you don't have to think too much</h4>
+        <select class="custom-select" id="q3">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 4</h3>
+        <h4>Video games is your favorite pass time</h4>
+        <select class="custom-select" id="q4">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 5</h3>
+        <h4>Bright colored clothing appeal to you</h4>
+        <select class="custom-select" id="q5">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <!-- <h3 class="font-weight-bold">Question 6</h3>
+        <h4>You don't care about food, as long as its edible</h4>
+        <select class="custom-select" id="q6">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 7</h3>
+        <h4>Summer is the best season ever</h4>
+        <select class="custom-select" id="q7">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 8</h3>
+        <h4>Truth is always better than lies, including white lies</h4>
+        <select class="custom-select" id="q8">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 9</h3>
+        <h4>You are known to be generous with money</h4>
+        <select class="custom-select" id="q9">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3 class="font-weight-bold">Question 10</h3>
+        <h4>Prefer to pay for tangible objects over activities</h4>
+        <select class="custom-select" id="q10">
+            <option selected></option>
+            <option value="1">1 (Strongly Desagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Completely Agree)</option>
+        </select>
+        <br>
+        <br> -->
+        <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+        <br>
+        <br>
+        <div id="matchModal" class="modal hide fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Here's Your BBF</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                </div>
+                <div class="modal-body">
+                  <h3><p class="matchName">Name</p></h3>
+                  <img class="matchImage img-responsive" src="/" alt="YOUR BFF!!" style="width:100%;height:100%;">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary reload" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+/*
+    var questDiv = $("<div>");
+    var questTitle = $("<h3>");
+    var question = $("<h4>");
+    var questOptions = $("<select>");
+    questOptions.addClass("custom-select");
+    questOptions.attr("id", "q" + i);
+    for(var t = 0; t < 5; t++){
+        questOptions.append($('<option>', {
+            value: t,
+            text: t
+        }));
+    }*/
+
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var ansArray = [];
+        for(var i = 1; i <= 5; i++){
+            var pushThis = parseInt($("#q"+i + " :selected").text());
+            if(pushThis){
+                ansArray.push(pushThis);
+            }
+            else{
+                return alert("Dont leave empty questions");
+            }
+        }
+        //console.log($("#name").val().trim());
+        var findFriend = {
+            name : $("#name").val().trim(),
+            photo : $("#pic").val().trim(),
+            scores : ansArray
+        };
+        
+        $.post("/api/friends", findFriend,
+        function(data) {
+
+           
+            $(".matchName").text(data.name);
+            $(".matchImage").attr("src",data.photo);
+            $("#matchModal").modal("toggle");
+        });
+
+    });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
