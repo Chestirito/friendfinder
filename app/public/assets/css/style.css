@@ -1,9 +1,22 @@
 body{
     background-image: url("../images/background.jpg");
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
     padding-top: 20px;
 }
-
+.jumbotron{
+    background-color: rgb(255, 211, 193, 80%);
+}
+.myButton{
+    background-color: rgb(103, 172, 144);
+    border-color: rgb(103, 172, 144);
+}
+.myButton:hover{
+    background-color: rgb(36, 121, 87);
+    border-color: rgb(36, 121, 87);
+}
+.myButton:not(:disabled):not(.disabled):active{
+    background-color: rgb(36, 121, 87);
+    border-color: rgb(36, 121, 87);
+}
 
